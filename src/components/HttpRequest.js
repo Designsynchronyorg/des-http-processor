@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios';
 
-export const HttpRequest = (url, requestType = "get", values, processResponse, isProcessing) => {
+const HttpRequest = (url, requestType = "get", values, processResponse, isProcessing) => {
 
     // get token from session
     const token = sessionStorage.getItem('token');
@@ -41,3 +41,5 @@ export const HttpRequest = (url, requestType = "get", values, processResponse, i
         return requestType === 'post' ? axios.post : axios.get;
     }
 }
+
+export default HttpRequest;

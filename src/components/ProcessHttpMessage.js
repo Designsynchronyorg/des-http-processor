@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const ProcessHttpMessage = (response, type) => {
+const ProcessHttpMessage = (response, type) => {
     // set message type
     let processed = {};
     // if successfully
@@ -31,3 +31,5 @@ export const ProcessHttpMessage = (response, type) => {
 
     return processed;
 }
+
+export default ProcessHttpMessage;
