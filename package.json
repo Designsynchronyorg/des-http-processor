@@ -17,6 +17,11 @@
     "react",
     "reactjs"
   ],
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "author": "Design Synchrony",
   "license": "ISC",
   "dependencies": {
